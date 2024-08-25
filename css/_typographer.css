@@ -1,0 +1,117 @@
+.typographer {
+  padding: 40px 0;
+}
+
+.typographer__title {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.form__text-wrapper {
+  position: relative;
+}
+
+.form__text {
+  width: 100%;
+  min-height: 240px;
+  margin-bottom: 24px;
+  padding: 20px 35px 20px 15px;
+
+  border-radius: var(--border-radius);
+  outline: 1px solid transparent;
+  resize: none;
+
+  transition-property: outline-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.form__text:focus {
+  outline-color: transparent;
+}
+
+.form__text:hover,
+.form__text:focus-visible {
+  outline-color: var(--color-accent);
+}
+
+.form__text-clear {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+
+.form__text-clear:before,
+.form__text-clear:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--color-grey);
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.form__text-clear:focus {
+  outline: none;
+}
+
+.form__text-clear:hover:before,
+.form__text-clear:hover:after,
+.form__text-clear:focus-visible:before,
+.form__text-clear:focus-visible:after {
+  background-color: var(--color-accent);
+}
+
+
+.form__text-clear:before {
+  rotate: 45deg;
+}
+
+.form__text-clear:after {
+  rotate: -45deg;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 24px;
+
+  color: var(--color-main);
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+
+  transition-property: box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.form__button:focus {
+  outline: none;
+}
+
+.form__button:hover,
+.form__button:focus-visible {
+  box-shadow: 1px 1px 10px var(--color-accent);
+}
+
+.form__button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.form__button:disabled:hover {
+  box-shadow: none;
+}

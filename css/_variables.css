@@ -1,0 +1,18 @@
+:root {
+  --container-width: 767px;
+  --container-padding-x: 15px;
+
+  --font-family: 'Inter', sans-serif;
+
+  --border-radius: 6px;
+
+  --transition-duration: .2s;
+  --transition-function: linear;
+
+  --background-color: #252525;
+
+  --color-main: #f7f7f7;
+  --color-dark: #252525;
+	--color-accent: #6c63ff;
+  --color-grey: #666666;
+}
